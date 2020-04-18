@@ -1,2 +1,2 @@
 # Color-Finder
-Small tool to pick colors easier. Set of color palets alow to go in some direction and find the one or more colors. Any of the palets are editable with hue, saturation and lightness
+Small tool to pick colors easier. A set of color palettes allow a user to go in a preferred direction and find one or more colors. Any of the pallets are editable with hue, saturation, and lightness
