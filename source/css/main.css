@@ -1,0 +1,331 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	padding: 17px;
+	margin: 0px;
+	font-family: 'Fahkwang', sans-serif;
+}
+
+h1 {
+	padding: 11px 0px;
+	font-size: 1.6em;
+	font-weight: normal;
+	margin: 0px;
+}
+
+h2 {
+	padding: 11px 0px;
+	font-size: 1.2em;
+	font-weight: normal;
+	margin: 0px;
+}
+
+h3 {
+	padding: 11px 0px;
+	font-size: 1.6em;
+	font-weight: normal;
+	color: #797979;
+	margin: 0px;
+}
+
+input {
+	font-family: 'Fahkwang', sans-serif;
+}
+
+select {
+	font-family: 'Fahkwang', sans-serif;
+}
+
+#bodyBx {
+    width: 99%;
+    height: 89%;
+    margin: 0px auto;
+    border: 1px solid #ededed;
+    padding: 23px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+#headerBx {
+	width: 99%;
+	height: 11%;
+	margin: 0px auto;
+	border: 0px solid #ededed;
+	padding: 19px 23px;
+	box-sizing: border-box;
+}
+
+.headerH1 {
+	float: left; 
+	padding-right: 15px;
+	cursor: pointer;
+}
+.headerH3 {
+	float: left; 
+	padding-left: 15px; 
+	margin-top: 0px; 
+	border-left: 3px solid #cbf658;
+}
+
+.paletteBx {
+	float: left;
+	width: 12.5%;
+	height: auto;
+	padding: 0px 5px 5px 0px;
+	box-sizing: border-box;
+	cursor: pointer;
+	font-size: 0.7em;
+}
+
+.paletteBxContent {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    box-shadow: 0px 0px 3pc 2px #ededed;
+    /*background-attachment: fixed;*/
+    /*background-size: cover;*/
+    /*background-size: 100% 100%;*/
+    /*background-size: contain;*/
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    background-position: center;
+}
+
+.selectedPaletteBx {
+    float: left;
+    width: 70%;
+    height: 100%;
+    text-align: right;
+    padding: 0 10% 10px 10%;
+}
+
+.selectedPaletteMenuBx {
+    float: right;
+    width: 30%;
+    height: 100%;
+    text-align: left;
+}
+
+#adjustColorBx {
+	padding: 23px 0px;
+	border: 0px solid red;
+	width: 100%;	
+}
+#adjustSwitchIcon {
+	margin: 0px 9px;
+}
+.titleBx-underline {
+	padding: 7px 0px 7px 0px;
+	font-size: 1.1em;
+	border-bottom: 3px solid #cbf658;
+	cursor: pointer;
+}
+
+#mySetOfColors {
+	padding: 0px 0px;
+	width: 100%;
+	height: 322px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+@media screen and (max-width: 1100px) {
+	.paletteBx {
+		width: 25%;
+		/*height: 33%;*/
+		font-size: 1.2em;
+	}
+	
+	#headerBx {
+		padding: 17px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.paletteBx {
+		width: 25%;
+		height: auto;
+		font-size: 0.8em;
+	}
+	#myCanvas {
+		/*width: 70%;
+		height: 70%;*/
+	}
+	.selectedPaletteBx {
+		width: 100%;
+		height: auto;
+		float: none;
+		/*background-color: #00ccff;*/
+	}
+	.selectedPaletteMenuBx {
+		width: 100%;
+		height: auto;
+		float: none;
+		clear: both;
+		/*background-color: #d4d4d4;*/
+	}
+	#headerBx {
+		padding: 13px 3px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	body {
+	   padding: 7px;
+	}
+	.paletteBx {
+		width: 25%;
+		height: auto;
+		font-size: 0.5em;
+	}
+	.paletteBxContent {
+	    padding: 7px;
+	}
+	#myCanvas {
+		/*width: 100%;
+		height: 100%;*/
+	}
+	.selectedPaletteBx {
+		width: 100%;
+		height: auto;
+		float: none;
+	}
+	.selectedPaletteMenuBx {
+		width: 100%;
+		height: auto;
+		float: none;
+	}
+	
+	#bodyBx {
+	   padding: 9px 0px 0px 0px;
+	   border: 0px;
+	}
+	#headerBx {
+		height: 9%;
+		padding: 9px 3px;
+	}
+	.headerH1 {
+		font-size: 1.1em;
+	}
+	.headerH3 {
+		font-size: 1.1em;
+	}
+	
+	#selectedPaletteMenuHeaderBx{
+		display: none;
+	}
+
+	#mySetOfColors {
+		height: auto;
+		overflow-y: auto;
+		overflow-x: auto;
+	}
+	
+	#zoomInColor {
+	   display: none;
+	}
+
+}
+
+.titlePaletteMenu {
+	font-size: 21pt;
+	text-align: right;
+	padding: 13px 0 47px 0;
+}
+
+.selectPalette {
+	width: 100%;
+	padding: 7px;
+	font-size: 11pt;
+}
+
+.colorBx {
+	width: 2px;
+	height: 2px;
+	float: left;
+}
+
+.colorInputBx {
+	width: 30px;
+	height: 20px;
+}
+
+#zoomInColor {
+	box-shodow: 0px 0px 3px 1px #3a3a3a inset;
+	margin: 15px 0px;
+}
+
+#zoomInColor {
+	width: 100%;
+	height: 50px;
+	text-align: right;
+	color: #fff;
+	padding: 5px 15px;
+	font-family: "Major Mono Display", monospace;
+}
+
+#colorInMemory, .colorInMemory {
+	width: 100%;
+	height: 40px;
+	text-align: right;
+	padding: 5px 15px;
+	color: #fff;
+}
+
+.colorInMemory {
+	width: 100%;
+	height: 50px;
+	text-align: right;
+	padding: 5px 15px;
+	color: #fff;
+}
+
+#hiddenTmpCanvas {
+	display: none;
+}
+
+#myCanvas {
+	cursor: crosshair;
+	/*width: 255px;   510px; */
+	/*height: 255px; /* 510px; */
+	object-fit: contain;
+}
+
+.myCanvasBx {
+	box-shadow: 0px 0px 9px 3px #e7e7e7;
+	padding: 21px;
+	width: 552px;
+	/*height: 510px;*/
+	margin: 0px auto;
+}
+
+.menuPanel {
+	vertical-align: top;
+	padding: 0px 13px 13px 13px;
+}
+
+#canvasPixelData {
+	font-size: 8px;
+	padding: 3px 7px;
+	text-align: right;
+	color: #ededed;
+}
+
+input[type="button"] {
+	padding: 5px 9px;
+}
+
+table {
+	width: 100%;
+}
